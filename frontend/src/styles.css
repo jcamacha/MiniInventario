@@ -1,10 +1,8 @@
-/* MiniInventario — Tema Slate */
+/* MiniInventario — Tema Claro */
 
 :root {
   --bs-primary: #2C3E50;
   --bs-primary-rgb: 44, 62, 80;
-  --bs-body-bg: #f5f6f8;
-  --bs-body-color: #2C3E50;
   --bs-link-color: #2C3E50;
   --bs-link-hover-color: #1a252f;
 }
@@ -22,22 +20,4 @@
   --bs-btn-border-color: #2C3E50;
   --bs-btn-hover-bg: #2C3E50;
   --bs-btn-hover-border-color: #2C3E50;
-}
-
-/* Cards: header oscuro */
-.card-header {
-  background-color: #2C3E50;
-  color: white;
-}
-
-.card-header h2 {
-  color: white;
-  margin: 0;
-}
-
-/* Tablas: cabecera oscura */
-.table thead th {
-  background-color: #2C3E50;
-  color: white;
-  font-weight: 500;
 }
