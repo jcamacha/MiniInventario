@@ -1,0 +1,17 @@
+MiniInventario - Actividad Escolar
+===================================
+
+URL de la aplicacion: https://jcamacha.github.io/MiniInventario/Home
+
+Stack:
+  - Backend:  Spring Boot 4 + Java 21 (Render)
+  - Frontend: Angular 21 + Bootstrap 5 (GitHub Pages)
+  - Base de datos: PostgreSQL (Render)
+
+API:
+  - https://miniinventario-api.onrender.com
+  - Swagger: https://miniinventario-api.onrender.com/documentacion/swagger-ui.html
+
+Repositorio: https://github.com/jcamacha/MiniInventario
+
+ESCOM IPN - 2026
