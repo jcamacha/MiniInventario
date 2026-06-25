@@ -10,11 +10,15 @@ import org.springframework.stereotype.Service;
 @Service
 public class EmailServiceImpl implements EmailService{
 
-    @Autowired
+    @Autowired(required = false)
     private JavaMailSender mailSender;
 
     @Override
     public void enviarCorreoElectronico(String to, String subject, String text){
+        if (mailSender == null) {
+            System.out.println("Email no configurado. Omitiendo envio.");
+            return;
+        }
         MimeMessage mensaje = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(mensaje, "UTF-8");
 
