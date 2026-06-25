@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: miniinventario-api
+    runtime: java
+    buildCommand: ./mvnw package -DskipTests
+    startCommand: java -jar target/*.jar
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - fromDatabase:
+          name: miniinventario-db
+          property: connectionString
+    autoDeploy: true
+
+databases:
+  - name: miniinventario-db
+    plan: free
