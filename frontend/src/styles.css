@@ -1,15 +1,8 @@
-/* =============================================
-   MiniInventario — Tema Slate
-   ============================================= */
+/* MiniInventario — Tema Slate */
 
 :root {
   --bs-primary: #2C3E50;
   --bs-primary-rgb: 44, 62, 80;
-  --bs-secondary: #6C757D;
-  --bs-success: #1ABC9C;
-  --bs-danger: #C0392B;
-  --bs-warning: #D4AC0D;
-  --bs-dark: #1a1d21;
   --bs-body-bg: #f5f6f8;
   --bs-body-color: #2C3E50;
   --bs-link-color: #2C3E50;
@@ -31,35 +24,20 @@
   --bs-btn-hover-border-color: #2C3E50;
 }
 
-/* Cards */
-.card {
-  border-radius: 0.5rem;
-}
-
+/* Cards: header oscuro */
 .card-header {
   background-color: #2C3E50;
-  color: white !important;
+  color: white;
 }
 
 .card-header h2 {
-  color: white !important;
+  color: white;
   margin: 0;
 }
 
-/* Navbar active link */
-.navbar .nav-link.active {
-  font-weight: 600;
-  border-bottom: 2px solid #1ABC9C;
-}
-
-/* Tablas */
+/* Tablas: cabecera oscura */
 .table thead th {
   background-color: #2C3E50;
   color: white;
   font-weight: 500;
-}
-
-/* Dropdown items */
-.dropdown-item:active {
-  background-color: #2C3E50;
 }

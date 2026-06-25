@@ -1,39 +1,30 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container">
-    <a class="navbar-brand fw-bold" routerLink="/Home">📦 MiniInventario</a>
+    <a class="navbar-brand fw-bold" routerLink="/Home">MiniInventario</a>
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Menú"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" routerLink="/Home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Categorías
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" routerLink="/ListaCategorias">Ver todas</a></li>
-            <li><a class="dropdown-item" routerLink="/CategoriaForm">Nueva categoría</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ListaCategorias" routerLinkActive="active">Categorias</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Productos
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" routerLink="/ListaProductos">Ver todos</a></li>
-            <li><a class="dropdown-item" routerLink="/ProductoForm">Nuevo producto</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/CategoriaForm" routerLinkActive="active">Nueva Categoria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ListaProductos" routerLinkActive="active">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ProductoForm" routerLinkActive="active">Nuevo Producto</a>
         </li>
       </ul>
     </div>
