@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+/* =============================================
+   MiniInventario — Tema Slate
+   ============================================= */
+
+:root {
+  --bs-primary: #2C3E50;
+  --bs-primary-rgb: 44, 62, 80;
+  --bs-secondary: #6C757D;
+  --bs-success: #1ABC9C;
+  --bs-danger: #C0392B;
+  --bs-warning: #D4AC0D;
+  --bs-dark: #1a1d21;
+  --bs-body-bg: #f5f6f8;
+  --bs-body-color: #2C3E50;
+  --bs-link-color: #2C3E50;
+  --bs-link-hover-color: #1a252f;
+}
+
+/* Botones */
+.btn-primary {
+  --bs-btn-bg: #2C3E50;
+  --bs-btn-border-color: #2C3E50;
+  --bs-btn-hover-bg: #1a252f;
+  --bs-btn-hover-border-color: #1a252f;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #2C3E50;
+  --bs-btn-border-color: #2C3E50;
+  --bs-btn-hover-bg: #2C3E50;
+  --bs-btn-hover-border-color: #2C3E50;
+}
+
+/* Cards */
+.card {
+  border-radius: 0.5rem;
+}
+
+.card-header {
+  background-color: #2C3E50;
+  color: white !important;
+}
+
+.card-header h2 {
+  color: white !important;
+  margin: 0;
+}
+
+/* Navbar active link */
+.navbar .nav-link.active {
+  font-weight: 600;
+  border-bottom: 2px solid #1ABC9C;
+}
+
+/* Tablas */
+.table thead th {
+  background-color: #2C3E50;
+  color: white;
+  font-weight: 500;
+}
+
+/* Dropdown items */
+.dropdown-item:active {
+  background-color: #2C3E50;
+}

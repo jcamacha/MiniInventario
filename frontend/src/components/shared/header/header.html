@@ -1,48 +1,41 @@
-<div class="mb-3">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" [routerLink]="'/Home'">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="'/ListaCategoria'">Categorias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="'/CategoriaForm'">CategoriaForm</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="'/ListaProducto'">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="'/ProductoForm'">ProductoForm</a>
-            </li>
+    <a class="navbar-brand fw-bold" routerLink="/Home">📦 MiniInventario</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Menú"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorías
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" routerLink="/ListaCategorias">Ver todas</a></li>
+            <li><a class="dropdown-item" routerLink="/CategoriaForm">Nueva categoría</a></li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" routerLink="/ListaProductos">Ver todos</a></li>
+            <li><a class="dropdown-item" routerLink="/ProductoForm">Nuevo producto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
+</nav>

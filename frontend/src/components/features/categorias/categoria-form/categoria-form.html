@@ -1,13 +1,13 @@
 <div class="mb-3">
   <div class="container">
     <div class="card border-success">
-      <div class="card-header text-primary text-center">
+      <div class="card-header text-center">
         <h2 class="card-title">
           {{ id() ? 'Actualizar Categoría' : title }}
         </h2>
       </div>
 
-      <div class="card-body text-primary">
+      <div class="card-body">
         <form #categoriaForm="ngForm" (ngSubmit)="guardar(categoriaForm)">
           <div class="mb-3">
             <label for="nombreCategoria" class="form-label">Nombre Categoría</label>
