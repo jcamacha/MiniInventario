@@ -5,7 +5,5 @@ COPY mvnw pom.xml ./
 RUN chmod +x mvnw
 COPY src src
 RUN ./mvnw package -DskipTests
-COPY startup.sh .
-RUN chmod +x startup.sh
 EXPOSE 8085
-CMD ["./startup.sh"]
+CMD ["java", "-jar", "target/MiniInventario-0.0.1-SNAPSHOT.jar"]

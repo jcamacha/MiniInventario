@@ -4,15 +4,23 @@ services:
     runtime: docker
     plan: free
     envVars:
-      - key: SPRING_DATASOURCE_URL
+      - key: DB_HOST
         fromDatabase:
           name: miniinventario-db
-          property: connectionString
-      - key: SPRING_DATASOURCE_USERNAME
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: miniinventario-db
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: miniinventario-db
+          property: database
+      - key: DB_USER
         fromDatabase:
           name: miniinventario-db
           property: user
-      - key: SPRING_DATASOURCE_PASSWORD
+      - key: DB_PASS
         fromDatabase:
           name: miniinventario-db
           property: password
